@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">    
     <link rel ="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>         
+    <title>Spotify-Let the Music begin</title>         
 </head>
 <body> 
     <header> 
         <div class="menu-bar">
-            <h2>PlayList</h2> 
+            <h2>PlayList</h2>  
             <div class="PlayList">
                 <h4 class="active"><span></span><i class="bi bi-music-note-beamed"><b>PlayList</b></i></h4>   
                 <h4 class="active"><span></span><i class="bi bi-music-note-beamed"><b>My-Loved-Ones</b></i></h4> 
@@ -118,13 +118,41 @@
                 <i class="bi playbutton bi-play-circle-fill" id="2"></i>         
                </li> 
             </div>   
-        </div>                
-        <div class="song-bar"></div>    
+        </div>        
+
+        <div class="song-bar">
+            <nav>     
+                <ul>
+                    
+                    <li>My-songs<span> </span><i class="bi bi-headphones"></i> </li>
+                    <li>My-Library <i class="bi bi-music-note-list"></i></li>            
+                    <li>Liked<i class="bi bi-heart-fill"></i></li>  
+                </ul>     
+               <div class="search">
+                <i class="bi bi-search"></i>         
+                <input type="text" placeholder="Search here">
+               </div>
+               <!-- <div class="user">
+                 <img src="cover-page/Alan-walker.jfif" alt="">
+               </div> -->
+            </nav>      
+           <div class="content">
+            <h2>Alan-walker-Fade</h2>
+            <h5>You Were The Shadow To my Light did You feel us Another Start</h5>
+            <h6>Away Afraid Our aim is Out of sight Wanna see us Alive</h6>
+            <div class="buttons">
+                <button type="button" class="playbu">Play</button>
+                <button type="button" class="followbu">Follow</button>
+            </div>
+           </div>
+        </div>    
+
+
         <div class="master-plate-bar">
-            <div class="wave">
+            <div class="wave"> 
                 <div class="wave1"></div>
                 <div class="wave1"></div>
-                <div class="wave1"></div>
+                <div class="wave1"></div>   
             </div>
             <img src="cover-page/chan-kitthan-03.jpg" alt="" id="poster-master-plate-bar">
             <h5>
@@ -134,14 +162,32 @@
                 </div>
             </h5>
             <div class="icons">
-                <i class="bi bi-music-note-beamed"></i>
+                <i class="bi shuffle bi-music-note-beamed"> </i>
                 <i class="bi bi-skip-start-fill"></i>
                 <i class="bi bi-play-fill"></i>
                 <i class="bi bi-skip-end-fill"></i>
-                <i class="bi bi-cloud-arrow-down-fill"></i>
+                <i class="bi bi-cloud-arrow-down-fill" id="download-music"></i>
+            </div>
+            <span id="currentstart">0.00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="200"> 
+                <div class="bar2" id="bar2"></div> 
+                <div class="dot"></div>
+            </div>
+            <span class="ending">100.00</span>
+            <div class="vol-bar">
+                <i class="bi bi-volume-up-fill"></i>
+                <input type="range"  id="vol" min="0" max="100">
+                <div class="vol_bar" id="bar2"></div>        
+                <div class="dot" id="vol_dot"></div>   
+            </div>
+            <div class="social">
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
             </div>
         </div>
-    </header> 
+    </header>        
      <!-- enabling javascript  -->    
     <script src ="app.js"></script>     
 </body>
